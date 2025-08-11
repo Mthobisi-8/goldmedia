@@ -7,10 +7,10 @@ export default function ContactUs() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    subject: '',
-    message: '',
     number: '',
     type: '',
+    subject: '',
+    message: '',
   });
 
   const handleChange = (e) => {
@@ -21,26 +21,33 @@ export default function ContactUs() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // EmailJS send email
     emailjs
       .send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS Service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS Template ID
+        'service_ncn14ud', // Your Service ID
+        'template_iqrfeqs', // Your Template ID
         {
+          to_name: "dembem@glmedia.co.za", // Replace with recipient name if needed
           from_name: formData.name,
           from_email: formData.email,
           phone_number: formData.number,
-          enquiry_type: formData.type,
+          purpose: formData.type, // matches {{purpose}}
           subject: formData.subject,
           message: formData.message,
         },
-        'YOUR_USER_ID' // Replace with your EmailJS User ID
+        'MWDMMwyq9jxWNhoNJ' // Your Public Key
       )
       .then(
         (result) => {
           console.log('Email sent successfully:', result.text);
           alert('Message sent successfully!');
-          setFormData({ name: '', email: '', subject: '', message: '', number: '', type: '' });
+          setFormData({
+            name: '',
+            email: '',
+            number: '',
+            type: '',
+            subject: '',
+            message: '',
+          });
         },
         (error) => {
           console.error('Email sending failed:', error.text);
@@ -76,7 +83,7 @@ export default function ContactUs() {
           {/* Contact Form */}
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col gap-4 p-6 bg-gray-900 rounded-xl shadow-xl transform transition-transform duration-300 hover:rotate-x-0 hover:scale-105"
+            className="flex flex-col gap-4 p-6 bg-gray-900 rounded-xl shadow-xl"
           >
             <input
               type="text"
@@ -84,8 +91,8 @@ export default function ContactUs() {
               placeholder="Your Name"
               value={formData.name}
               onChange={handleChange}
-              className="p-3 rounded-md bg-gray-800 border border-purple-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
               required
+              className="p-3 rounded-md bg-gray-800 border border-purple-700 text-white"
             />
             <input
               type="email"
@@ -93,8 +100,8 @@ export default function ContactUs() {
               placeholder="Your Email"
               value={formData.email}
               onChange={handleChange}
-              className="p-3 rounded-md bg-gray-800 border border-purple-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
               required
+              className="p-3 rounded-md bg-gray-800 border border-purple-700 text-white"
             />
             <input
               type="tel"
@@ -102,19 +109,22 @@ export default function ContactUs() {
               placeholder="Phone Number"
               value={formData.number}
               onChange={handleChange}
-              className="p-3 rounded-md bg-gray-800 border border-purple-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
               required
+              className="p-3 rounded-md bg-gray-800 border border-purple-700 text-white"
             />
             <select
               name="type"
               value={formData.type}
               onChange={handleChange}
-              className="p-3 rounded-md bg-gray-800 border border-purple-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
               required
+              className="p-3 rounded-md bg-gray-800 border border-purple-700 text-white"
             >
-              <option value="" disabled>Select Type</option>
-              <option value="Enquiry">Enquiry</option>
-              <option value="Consultation">Consultation</option>
+              <option value="">Select Purpose</option>
+              <option value="Market Research">Market Research</option>
+              <option value="Socail Media Content Creation">Socail Media Content Creation</option>
+              <option value="Photography">Photography</option>
+              <option value="Market Strategy">Market Strategy</option>
+              <option value="Videography">Videography</option>
             </select>
             <input
               type="text"
@@ -122,20 +132,20 @@ export default function ContactUs() {
               placeholder="Subject"
               value={formData.subject}
               onChange={handleChange}
-              className="p-3 rounded-md bg-gray-800 border border-purple-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
               required
+              className="p-3 rounded-md bg-gray-800 border border-purple-700 text-white"
             />
             <textarea
               name="message"
               placeholder="Your Message"
               value={formData.message}
               onChange={handleChange}
-              className="p-3 rounded-md bg-gray-800 border border-purple-700 text-white min-h-[100px] focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
               required
+              className="p-3 rounded-md bg-gray-800 border border-purple-700 text-white min-h-[100px]"
             ></textarea>
             <button
               type="submit"
-              className="mt-4 bg-amber-500 text-black px-4 py-2 rounded-md font-semibold hover:bg-amber-400 transition transform hover:scale-105"
+              className="mt-4 bg-amber-500 text-black px-4 py-2 rounded-md font-semibold hover:bg-amber-400"
             >
               Send Message
             </button>

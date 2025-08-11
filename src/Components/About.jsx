@@ -11,28 +11,28 @@ function About() {
       name: "Nicole F.",
       role: "Creative Director",
       desc: "Leads the creative vision for campaigns, oversees design and content teams, and ensures brand consistency across all visual and messaging outputs.",
-      img: "https://via.placeholder.com/150",
+      img: "NicoleF.jpg",
     },
     {
       id: 2,
       name: "Gabby",
       role: "Graphic Design",
       desc: "Designs visual content like logos, social media graphics, and marketing materials to support brand identity and communication.",
-      img: "https://via.placeholder.com/150",
+      img: "Gabby.jpg",
     },
     {
       id: 3,
       name: "Nicole M.",
       role: "Marketing Researcher ",
       desc: "Gathers and analyzes market data to identify trends, customer needs, and competitive insights that guide marketing strategies.",
-      img: "https://via.placeholder.com/150",
+      img: "NicoleM.jpg",
     },
     {
       id: 4,
       name: "Dembe",
       role: "Marketing Coordinator ",
       desc: "Assists in planning and executing marketing campaigns, manages schedules, and coordinates between teams to ensure projects run smoothly.",
-      img: "https://via.placeholder.com/150",
+      img: "Dembe.jpg",
     },
   ];
 
