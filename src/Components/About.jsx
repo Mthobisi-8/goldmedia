@@ -17,7 +17,7 @@ function About() {
       id: 2,
       name: "Gabby",
       role: "Graphic Design",
-      desc: "Our graphic design service transforms ideas into visuals that connect with your audience and elevate your brand. From striking social media creatives to complete brand identity packages, we craft designs that not only look beautiful but also work strategically to achieve your business goals.Whether you need logo design, marketing materials, website graphics, packaging concepts, or event visuals, we ensure every element reflects your unique brand personality. We blend creativity with purpose, giving you visuals that stand out, stay consistent, and leave a lasting impression.",
+      desc: "We design creative visuals—from logos to full brand identities—that reflect your brand and help achieve your business goals.",
       img: "Gabby.jpg",
     },
     {
