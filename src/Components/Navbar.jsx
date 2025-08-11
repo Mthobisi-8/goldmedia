@@ -50,6 +50,12 @@ const Navbar = () => {
           >
             <X size={32} />
           </button>
+
+          {/* Logo above menu links */}
+          <Link to="/Homepage" onClick={() => setIsOpen(false)} className="mb-8">
+            <img src="/Logo.png" alt="Logo" className="h-16" />
+          </Link>
+
           <Link to="/" onClick={() => setIsOpen(false)} className="hover:text-amber-500">Home</Link>
           <Link to="/about" onClick={() => setIsOpen(false)} className="hover:text-amber-500">About</Link>
           <Link to="/service" onClick={() => setIsOpen(false)} className="hover:text-amber-500">Services</Link>
