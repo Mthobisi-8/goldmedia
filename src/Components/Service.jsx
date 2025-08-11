@@ -140,7 +140,7 @@ export default function Service() {
             ))}
           </div>
           <div className="mt-12 h-64 mx-auto p-6 rounded-2xl backdrop-blur-sm">
-            <h1 className="font-semibold text-amber-500 mb-4 text-center text-2xl">SOCAIL MEDIA</h1>
+            <h1 className="font-semibold text-amber-500 mb-4 text-center text-2xl">SOCIAL MEDIA</h1>
             <div className="flex justify-center space-x-36">
               <div className="iso-pro">
                 <a
