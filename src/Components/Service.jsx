@@ -19,8 +19,8 @@ const services = [
     iframe: "https://lottie.host/embed/76022b38-845a-4e78-8769-7c1b52171171/8HS65nGQCR.lottie",
   },
   {
-    title: "Photography",
-    description: "Professional photography services for events, products, and promotional materials. We offer professional photography that brings your brand, products, and events to life. Whether you need clean product shots, team photos, lifestyle images, or event coverage, we capture high-quality visuals that tell your story and grab attention.",
+    title: "Photography & Videography",
+    description: "Professional photography  and high-quality video production services for events, products, and promotional materials. We offer professional photography  and videography that brings your brand, products, and events to life. Whether you need clean product shots, team photos, lifestyle images and videos, or event coverage, we capture high-quality visuals that tell your story and grab attention.",
     iframe: "https://lottie.host/embed/94ae6060-19f6-4269-ba4e-3b9879ba92ce/x32BEQu1yJ.lottie",
   },
   {
@@ -29,8 +29,13 @@ const services = [
     iframe: "https://lottie.host/embed/68f2a7dd-4439-448f-ada0-46d0a5345017/1PMKyEi49H.lottie",
   },
   {
-    title: "Videography",
-    description: "High-quality video production for marketing campaigns and storytelling. We create high-quality videos that showcase your brand, products, or events in a powerful way. From concept to final edit, we handle filming, directing, and editing to tell your story visually. Whether it’s for social media, ads, or your website— we make sure your videos grab attention and leave a lasting impression.",
+    title: "Graphic Design",
+    description: "Graphic design is the art and practice of creating visual content to communicate ideas. We create professional, cisually appealing designs that help businesses and individuals to communicate their brand, ideas or messages effectively. this include logos, marketing materials, sovial media graphic and more.",
+    iframe: "https://lottie.host/embed/6d18cc6c-8122-48b7-bd08-9ba230b75cb0/mT5RVNUZoq.lottie",
+  },
+   {
+    title: "Social Media Management",
+    description: "We design create visuals from logos to full brand identities that reflect your brand and help achieve your busuness goals.",
     iframe: "https://lottie.host/embed/6d18cc6c-8122-48b7-bd08-9ba230b75cb0/mT5RVNUZoq.lottie",
   },
 ];

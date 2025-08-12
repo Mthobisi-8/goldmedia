@@ -11,7 +11,7 @@ function Portfolio() {
     },
     {
       title: 'Takusani',
-      description: 'Insta-ready content · Full platform takeover · Scroll-stopping visuals Networkco trusted us with their digital voice and we ran with it. From Instagram to TikTok, Facebook to LinkedIn, we handled it all. We created content that wasn’t just pretty, but actually performed. Our team shot, styled, edited, and curated everything videos, photos, graphics to keep their platforms buzzing. Basically, we made them look good everywhere.',
+      description: ' We specialize in delivering impactful visuals and branding solution. We combine design expertise, innovatio and attention to detail to help clients stand out and comunicate their message effectively.',
       image: ['TakuLogo.png'],
     },
     {
