@@ -11,8 +11,8 @@ function Portfolio() {
     },
     {
       title: 'Takusani',
-      description: ' We specialize in delivering impactful visuals and branding solution. We combine design expertise, innovatio and attention to detail to help clients stand out and comunicate their message effectively.',
-      image: ['TakuLogo.png'],
+      description: ' At Takusani, we provide end-to-end marketing, social media, and administrative support to strengthen the companys brand prsence and operational efficiency. Our role included managing all social media platforms, from developing strategic content plans to creating high-quality graphic designs and photography that reflected the brands identity. We oversaw the companyd online prsence, conducted in-depth market research to inform targetd advertising campaigns.',
+      image: ['TakuLogo.png'],  
     },
     {
       title: 'The NetworkCo',

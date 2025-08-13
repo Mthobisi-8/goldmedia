@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-gray-900 text-white py-4 px-6 shadow-md z-50">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between w-full">
         {/* Left Logo */}
         <div className="flex-shrink-0">
           <Link to="/Homepage">
@@ -20,7 +20,7 @@ const Navbar = () => {
         </div>
 
         {/* Right Nav Links - Desktop */}
-        <div className="hidden md:flex items-center gap-6 font-extrabold mr-0">
+        <div className="hidden md:flex items-center gap-6 font-extrabold">
           <Link to="/" className="hover:text-amber-500">Home</Link>
           <Link to="/about" className="hover:text-amber-500">About</Link>
           <Link to="/service" className="hover:text-amber-500">Services</Link>
@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>
 
         {/* Right Contact Link - Desktop + Mobile Toggle */}
-        <div className="flex items-center gap-8">
+        <div className="flex md:hidden tems-center">
           <div className="hidden md:block font-extrabold"></div>
           <button
             className="md:hidden"
