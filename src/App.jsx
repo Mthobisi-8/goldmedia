@@ -20,8 +20,13 @@ const router = createBrowserRouter(
 
 function App() {
   return (
-    <div>
-      <RouterProvider router={router} />
+    <div className="min-h-screen flex flex-col">
+      <header className="bg-gray-800 p-4 flex justify-center">
+        <img src="/Logo.svg" alt="Logo" className="h-12" />
+      </header>
+      <main className="flex-grow">
+        <RouterProvider router={router} />
+      </main>
     </div>
   );
 }
