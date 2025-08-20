@@ -36,7 +36,7 @@ const services = [
    {
     title: "Social Media Management",
     description: "We design create visuals from logos to full brand identities that reflect your brand and help achieve your busuness goals.",
-    iframe: "https://lottie.host/embed/6d18cc6c-8122-48b7-bd08-9ba230b75cb0/mT5RVNUZoq.lottie",
+    iframe: "https://lottie.host/embed/165a0fd9-2ec8-4e79-b070-8270db07f82b/dmRxKRuVUg.lottie",
   },
 ];
 
@@ -144,44 +144,7 @@ export default function Service() {
               />
             ))}
           </div>
-          <div className="mt-12 h-64 mx-auto p-6 rounded-2xl backdrop-blur-sm">
-            <h1 className="font-semibold text-amber-500 mb-4 text-center text-2xl">SOCIAL MEDIA</h1>
-            <div className="flex justify-center space-x-36">
-              <div className="iso-pro">
-                <a
-                  href="https://www.linkedin.com/company/gold-label-media/"
-                  className="text-white hover:text-amber-400 transition duration-300"
-                >
-                  <SlSocialLinkedin className="social-svg h-40 w-30 p-2 text-amber-200 hover:text-amber-600 fill-current" />
-                  <span className="iso-span"></span>
-                  <span className="iso-span"></span>
-                  <span className="iso-span"></span>
-                </a>
-              </div>
-              <div className="iso-pro">
-                <a
-                  href="https://www.instagram.com/goldlabelmedia_sa?igsh=M2YzZzViZmk4dHlo"
-                  className="text-white hover:text-amber-400 transition duration-300"
-                >
-                  <IoLogoInstagram className="social-svg h-40 w-30 p-2 text-amber-200 hover:text-amber-600 fill-current" />
-                  <span className="iso-span"></span>
-                  <span className="iso-span"></span>
-                  <span className="iso-span"></span>
-                </a>
-              </div>
-              <div className="iso-pro">
-                <a
-                  href="https://www.tiktok.com/@gold.label.media?_t=ZS-8xWbBCiIRdw&_r=1"
-                  className="text-white hover:text-amber-400 transition duration-300"
-                >
-                  <FaTiktok className="social-svg h-40 w-30 p-2 rounded-full text-amber-200 hover:text-amber-600 fill-current" />
-                  <span className="iso-span"></span>
-                  <span className="iso-span"></span>
-                  <span className="iso-span"></span>
-                </a>
-              </div>
-            </div>
-          </div>
+         
         </div>
         <Footer />
       </div>
