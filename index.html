@@ -11,3 +11,56 @@
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My React App</title>
+  <!-- Favicon for icon display on reload -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-router-dom@6/dist/umd/react-router-dom.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    const { createBrowserRouter, RouterProvider, Route, createRoutesFromElements } = ReactRouterDOM;
+
+    // Mock components (replace with your actual component imports in a real setup)
+    const HomePage = () => <div className="min-h-screen bg-gray-100 flex items-center justify-center"><h1 className="text-4xl font-bold text-blue-600">Home Page</h1></div>;
+    const About = () => <div className="min-h-screen bg-gray-100 flex items-center justify-center"><h1 className="text-4xl font-bold text-blue-600">About Page</h1></div>;
+    const Service = () => <div className="min-h-screen bg-gray-100 flex items-center justify-center"><h1 className="text-4xl font-bold text-blue-600">Service Page</h1></div>;
+    const Portfolio = () => <div className="min-h-screen bg-gray-100 flex items-center justify-center"><h1 className="text-4xl font-bold text-blue-600">Portfolio Page</h1></div>;
+    const ContactUs = () => <div className="min-h-screen bg-gray-100 flex items-center justify-center"><h1 className="text-4xl font-bold text-blue-600">Contact Us Page</h1></div>;
+
+    const router = createBrowserRouter(
+      createRoutesFromElements(
+        <>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/HomePage" element={<HomePage />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Service" element={<Service />} />
+          <Route path="/Portfolio" element={<Portfolio />} />
+          <Route path="/ContactUs" element={<ContactUs />} />
+        </>
+      )
+    );
+
+    function App() {
+      return (
+        <div className="font-sans">
+          <RouterProvider router={router} />
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>
